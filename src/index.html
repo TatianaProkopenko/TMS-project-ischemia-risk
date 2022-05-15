@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Document</title>
+</head>
+<body class="page">
+  <main class="main">
+    <div class="container">
+      <article class="counter">
+        <h1 >Риск развития отсроченной церебральной ишемии (ОЦИ) после нетравматического субарахноидального кровоизлияния (НСАК)</h1>
+        <form action="#" class="counter__form form" name="counter" method="post">
+          <fieldset class="form__item form__parameters" name="parameters">
+            <div class="input-group">
+              <div class="input">
+                <div class="input__heading">
+                  <label  class="heading" for="hunthess">Тяжесть неврологического статуса по шкале Hunt-Hess </label>
+                </div>
+                <div class="input__wrapper">
+                  <input type="text" id="hunthess" name="hunthess" placeholder="1-5" inputmode="decimal" maxlength="1" required>
+                </div>
+              </div>
+
+              <div class="input">
+                <div class="input__heading">
+                  <label for="fischer" class="heading">Объем и характер НСАК по Fischer</label>
+                </div>
+                <div class="input__wrapper">
+                  <input type="text" id="fischer" name="fischer" placeholder="1-4" inputmode="decimal" maxlength="1" required>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__item">
+            <legend class="heading">Степень вазоспазма </legend>
+            <ul class="radios-group">
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="withoutvasospasm" name="vasospasm" value="withoutvas" type="radio" checked required>
+                  <label for="withoutvasospasm">Линейная скорость кровотока по СМА менее 120см/с</label>
+                </div>                
+              </li>
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="withvasospasm" name="vasospasm" value="withvas" type="radio"  required>
+                  <label for="withvasospasm"> Линейная скорость кровотока по СМА более 120см/с</label>
+                </div>                
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <fieldset class="form__item">
+            <legend class="heading">Индекс Линдегаарда </legend>
+            <ul class="radios-group">
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="lindegaardzero" name="lindegaard" value="lindzero" type="radio" checked required>
+                  <label for="lindegaardzero">Индекс Линдегаарда менее 3,0</label>
+                </div>                
+              </li>
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="lindegaardone" name="lindegaard" value="lindone" type="radio"  required>
+                  <label for="lindegaardone">Индекс Линдегаарда от 3,0 до 5,9</label>
+                </div>                
+              </li>
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="lindegaardtwo" name="lindegaard" value="lindtwo" type="radio"  required>
+                  <label for="lindegaardtwo">Индекс Линдегаарда более 6,0</label>
+                </div>                
+              </li>
+            </ul>
+          </fieldset>
+          
+          <fieldset class="form__item">
+            <legend class="heading">Распространенность вазоспазма по классификации Хамидова
+              Л.Т. </legend>
+            <ul class="radios-group">
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="hamidovvaszero" name="hamidov" value="hamidovzero" type="radio" checked required>
+                  <label for="hamidovvaszero">Отсутствие вазоспазма</label>
+                </div>                
+              </li>
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="hamidovvasone" name="hamidov" value="hamidovone" type="radio"  required>
+                  <label for="hamidovvasone">Сегментарный или распространенный вазоспазм</label>
+                </div>                
+              </li>
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="hamidovvastwo" name="hamidov" value="hamidovtwo" type="radio"  required>
+                  <label for="hamidovvastwo">Диффузный вазоспазм</label>
+                </div>                
+              </li>            
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__item">
+            <legend class="heading">Объем ишемических изменений по данным КТ</legend>
+            <ul class="radios-group">
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="ischemiavaluezero" name="ischemia" value="ischemiazero" type="radio" checked required>
+                  <label for="ischemiavaluezero">Отсутствие очагов ишемии</label>
+                </div>                
+              </li>
+
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="ischemiavalueone" name="ischemia" value="ischemiaone" type="radio"  required>
+                  <label for="ischemiavalueone">Объём ишемии 1-14 мл</label>
+                </div>                
+              </li>
+
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="ischemiavaluetwo" name="ischemia" value="ischemiatwo" type="radio" required>
+                  <label for="ischemiavaluetwo">Объём ишемии 15-34 мл</label>
+                </div>                
+              </li>
+
+              <li class="radio">
+                <div class="radio__wrapper">
+                  <input id="ischemiavaluethree" name="ischemia" value="ischemiathree" type="radio" required>
+                  <label for="ischemiavaluethree">Объём ишемии более 35 мл</label>
+                </div>                
+              </li>
+          
+            </ul>
+          </fieldset>
+
+
+          <div class="form__submit">
+            <button class="form__submit-button button" name="submit" type="submit" disabled >
+              Рассчитать риск
+            </button>
+            <button class="form__reset-button" name="reset" type="reset" disabled>
+              <span>
+                Очистить поля и расчёт
+              </span>
+            </button>
+          </div>
+        </form>
+
+
+        <section class="counter__result counter__result--hidden">
+          <h2 class="heading">
+            Риск развития ОЦИ
+          </h2>
+          <ul class="counter__result-list">
+            <li class="counter__result-item">
+              <h3>
+                <span id="risk-norm">1</span> 
+              </h3>
+              <p>
+                значение риска
+              </p>
+            </li>
+            <li class="counter__result-item">
+              <h3>
+                <span id="risk-minimal">2</span>
+              </h3>
+              <p>
+                нижнее пороговое значение
+              </p>
+            </li>
+            <li class="counter__result-item">
+              <h3>
+                <span id="risk-maximal">3</span> 
+              </h3>
+              <p>
+                верхнее пороговое значение
+              </p>
+            </li>
+          </ul>
+        </section>
+
+
+
+      </article>
+    </div>
+  </main>
+
+<script  type="module" src="./js/index.js"></script>
+
+  </body>
+</html>
