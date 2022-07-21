@@ -11,13 +11,13 @@
   <main class="main">
     <div class="container">
       <article class="counter">
-        <h1 >Риск развития отсроченной церебральной ишемии (ОЦИ) после нетравматического субарахноидального кровоизлияния (НСАК)</h1>
+        <h1 >Risk of delayed cerebral ischemia (DCI) after non-traumatic subarachnoid hemorrhage (NSAH)</h1>
         <form action="#" class="counter__form form" name="counter" method="post">
           <fieldset class="form__item form__parameters" name="parameters">
             <div class="input-group">
               <div class="input">
                 <div class="input__heading">
-                  <label  class="heading" for="hunthess">Тяжесть неврологического статуса по шкале Hunt-Hess </label>
+                  <label  class="heading" for="hunthess">The severity of the neurological status on a scale Hunt-Hess </label>
                 </div>
                 <div class="input__wrapper">
                   <input type="text" id="hunthess" name="hunthess" placeholder="1-5" inputmode="decimal" maxlength="1" required>
@@ -26,7 +26,7 @@
 
               <div class="input">
                 <div class="input__heading">
-                  <label for="fischer" class="heading">Объем и характер НСАК по Fischer</label>
+                  <label for="fischer" class="heading">Scope and nature of the NSAC from Fischer scale</label>
                 </div>
                 <div class="input__wrapper">
                   <input type="text" id="fischer" name="fischer" placeholder="1-4" inputmode="decimal" maxlength="1" required>
@@ -36,18 +36,18 @@
           </fieldset>
 
           <fieldset class="form__item">
-            <legend class="heading">Степень вазоспазма </legend>
+            <legend class="heading">Degree of vasospasm </legend>
             <ul class="radios-group">
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="withoutvasospasm" name="vasospasm" value="withoutvas" type="radio" checked required>
-                  <label for="withoutvasospasm">Линейная скорость кровотока по СМА менее 120см/с</label>
+                  <label for="withoutvasospasm">The linear velocity of blood flow along the MCA is less than 120 cm / s</label>
                 </div>                
               </li>
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="withvasospasm" name="vasospasm" value="withvas" type="radio"  required>
-                  <label for="withvasospasm"> Линейная скорость кровотока по СМА более 120см/с</label>
+                  <label for="withvasospasm"> The linear velocity of blood flow in the MCA is more than 120 cm/s</label>
                 </div>                
               </li>
             </ul>
@@ -55,82 +55,81 @@
 
 
           <fieldset class="form__item">
-            <legend class="heading">Индекс Линдегаарда </legend>
+            <legend class="heading">Lindegard index </legend>
             <ul class="radios-group">
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="lindegaardzero" name="lindegaard" value="lindzero" type="radio" checked required>
-                  <label for="lindegaardzero">Индекс Линдегаарда менее 3,0</label>
+                  <label for="lindegaardzero">Lindegaard index less than 3.0</label>
                 </div>                
               </li>
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="lindegaardone" name="lindegaard" value="lindone" type="radio"  required>
-                  <label for="lindegaardone">Индекс Линдегаарда от 3,0 до 5,9</label>
+                  <label for="lindegaardone">Lindegard index from 3.0 to 5.9</label>
                 </div>                
               </li>
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="lindegaardtwo" name="lindegaard" value="lindtwo" type="radio"  required>
-                  <label for="lindegaardtwo">Индекс Линдегаарда более 6,0</label>
+                  <label for="lindegaardtwo">Lindegaard index over 6.0</label>
                 </div>                
               </li>
             </ul>
           </fieldset>
           
           <fieldset class="form__item">
-            <legend class="heading">Распространенность вазоспазма по классификации Хамидова
-              Л.Т. </legend>
+            <legend class="heading">The prevalence of vasospasm according to Khamidov's classification</legend>
             <ul class="radios-group">
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="hamidovvaszero" name="hamidov" value="hamidovzero" type="radio" checked required>
-                  <label for="hamidovvaszero">Отсутствие вазоспазма</label>
+                  <label for="hamidovvaszero">Absence of vasospasm</label>
                 </div>                
               </li>
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="hamidovvasone" name="hamidov" value="hamidovone" type="radio"  required>
-                  <label for="hamidovvasone">Сегментарный или распространенный вазоспазм</label>
+                  <label for="hamidovvasone">Segmental or widespread vasospasm</label>
                 </div>                
               </li>
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="hamidovvastwo" name="hamidov" value="hamidovtwo" type="radio"  required>
-                  <label for="hamidovvastwo">Диффузный вазоспазм</label>
+                  <label for="hamidovvastwo">Diffuse vasospasm</label>
                 </div>                
               </li>            
             </ul>
           </fieldset>
 
           <fieldset class="form__item">
-            <legend class="heading">Объем ишемических изменений по данным КТ</legend>
+            <legend class="heading">The volume of ischemic changes according to computed tomography</legend>
             <ul class="radios-group">
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="ischemiavaluezero" name="ischemia" value="ischemiazero" type="radio" checked required>
-                  <label for="ischemiavaluezero">Отсутствие очагов ишемии</label>
+                  <label for="ischemiavaluezero">No foci of ischemia</label>
                 </div>                
               </li>
 
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="ischemiavalueone" name="ischemia" value="ischemiaone" type="radio"  required>
-                  <label for="ischemiavalueone">Объём ишемии 1-14 мл</label>
+                  <label for="ischemiavalueone">Ischemia volume 1-14 ml</label>
                 </div>                
               </li>
 
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="ischemiavaluetwo" name="ischemia" value="ischemiatwo" type="radio" required>
-                  <label for="ischemiavaluetwo">Объём ишемии 15-34 мл</label>
+                  <label for="ischemiavaluetwo">Ischemia volume 15-34 мл</label>
                 </div>                
               </li>
 
               <li class="radio">
                 <div class="radio__wrapper">
                   <input id="ischemiavaluethree" name="ischemia" value="ischemiathree" type="radio" required>
-                  <label for="ischemiavaluethree">Объём ишемии более 35 мл</label>
+                  <label for="ischemiavaluethree">Ischemia volume more than 35 ml</label>
                 </div>                
               </li>
           
@@ -140,11 +139,11 @@
 
           <div class="form__submit">
             <button class="form__submit-button button" name="submit" type="submit" disabled >
-              Рассчитать риск
+              Calculate Risk
             </button>
             <button class="form__reset-button" name="reset" type="reset" disabled>
               <span>
-                Очистить поля и расчёт
+                Clear fields and calculation
               </span>
             </button>
           </div>
@@ -153,7 +152,7 @@
 
         <section class="counter__result counter__result--hidden">
           <h2 class="heading">
-            Риск развития ОЦИ
+            Risk of developing DCI
           </h2>
           <ul class="counter__result-list">
             <li class="counter__result-item">
@@ -161,7 +160,7 @@
                 <span id="risk-norm">1</span> 
               </h3>
               <p>
-                значение риска
+                risk value
               </p>
             </li>
             <li class="counter__result-item">
@@ -169,7 +168,7 @@
                 <span id="risk-minimal">2</span>
               </h3>
               <p>
-                нижнее пороговое значение
+                lower threshold
               </p>
             </li>
             <li class="counter__result-item">
@@ -177,7 +176,7 @@
                 <span id="risk-maximal">3</span> 
               </h3>
               <p>
-                верхнее пороговое значение
+                upper threshold
               </p>
             </li>
           </ul>
